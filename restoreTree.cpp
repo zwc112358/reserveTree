@@ -1,4 +1,4 @@
-﻿// 重建二叉树.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+// 重建二叉树.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 #include "pch.h"
 #include <iostream>
@@ -21,7 +21,6 @@ bool restoreTree(int* pre, int* mid, int length, TreeNode* treeRootNode)
 	if (length == 0)
 		return true;
 
-	bool re = false;
 	treeRootNode->m_value = pre[0];
 	int leftLen = 0;
 	for (; leftLen < length; ++leftLen)
@@ -34,7 +33,6 @@ bool restoreTree(int* pre, int* mid, int length, TreeNode* treeRootNode)
 	{
 		return false;
 	}
-		//return false;
 
 	if (leftLen != 0)
 	{
